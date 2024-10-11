@@ -1,0 +1,19 @@
+{
+    "name": "math-competition-base",
+    "version": "1.0.0",
+    "description": "A simple math competition app",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "jest"
+    },
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.21.1"
+    },
+    "devDependencies": {
+        "jest": "^27.0.6"
+    },
+    "author": "Nebah",
+    "license": "ISC"
+}
