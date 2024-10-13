@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body align="center">
+    <h1>Quiz Question</h1>
+    <p><%= question.text %></p>
+    <form action="/quiz" method="POST">
+        <% question.options.forEach(option => { %>
+            <button type="submit" name="answer" value="<%= option %>"><%= option %></button>
+        <% }) %>
+    </form>
+</body>
+</html>

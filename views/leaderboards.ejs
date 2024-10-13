@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboards</title>
+</head>
+<body align="center">
+    <h1>Leaderboards</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Streak</th>
+            <th>Questions Correct</th>
+            <th>Date Achieved</th>
+        </tr>
+        <% leaderboards.forEach(entry => { %>
+            <tr>
+                <td><%= entry.name %></td>
+                <td><%= entry.streak %></td>
+                <td><%= entry.correct %></td>
+                <td><%= entry.date %></td>
+            </tr>
+        <% }) %>
+    </table>
+    <a href="/">Return Home</a>
+</body>
+</html>
